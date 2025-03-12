@@ -2,7 +2,7 @@
 
 ![Hindsight App Screenshot](./assets/hindsight-hero.jpg)
 
-This app helps you rest your eyes following the 20/20/20 rule—reminding you to look away from your screen every 20 minutes for 20 seconds at something 20 feet away. Instead of a simple timer, it features Brian Eno's Oblique Strategies, offering thought-provoking prompts to shift your perspective, inspire creativity, and reset your focus. Give your eyes a break, and let your mind wander in unexpected directions.
+This app helps you rest your eyes following the 20/20/20 rule—reminding you to look away from your screen every 20 minutes for 20 seconds at something 20 feet away. Instead of a simple timer, it features Brian Eno's *Oblique Strategies*, offering prompts to shift your perspective and reset your focus. Give your eyes a break, and let your mind wander.
 
 ## Features
 
