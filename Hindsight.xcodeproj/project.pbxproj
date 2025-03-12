@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		F8669DC42D526586003E8DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8669DAA2D526583003E8DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8669DB12D526583003E8DDC;
+			remoteInfo = Hindsight;
+		};
+		F8669DCE2D526586003E8DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8669DAA2D526583003E8DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8669DB12D526583003E8DDC;
+			remoteInfo = Hindsight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8669DB22D526583003E8DDC /* Hindsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hindsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8669DC32D526586003E8DDC /* HindsightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HindsightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8669DCD2D526586003E8DDC /* HindsightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HindsightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F8669DB42D526583003E8DDC /* Hindsight */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Hindsight;
+			sourceTree = "<group>";
+		};
+		F8669DC62D526586003E8DDC /* HindsightTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HindsightTests;
+			sourceTree = "<group>";
+		};
+		F8669DD02D526586003E8DDC /* HindsightUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HindsightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8669DAF2D526583003E8DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DC02D526586003E8DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DCA2D526586003E8DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8669DA92D526583003E8DDC = {
+			isa = PBXGroup;
+			children = (
+				F8669DB42D526583003E8DDC /* Hindsight */,
+				F8669DC62D526586003E8DDC /* HindsightTests */,
+				F8669DD02D526586003E8DDC /* HindsightUITests */,
+				F8669DB32D526583003E8DDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8669DB32D526583003E8DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8669DB22D526583003E8DDC /* Hindsight.app */,
+				F8669DC32D526586003E8DDC /* HindsightTests.xctest */,
+				F8669DCD2D526586003E8DDC /* HindsightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8669DB12D526583003E8DDC /* Hindsight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8669DD72D526586003E8DDC /* Build configuration list for PBXNativeTarget "Hindsight" */;
+			buildPhases = (
+				F8669DAE2D526583003E8DDC /* Sources */,
+				F8669DAF2D526583003E8DDC /* Frameworks */,
+				F8669DB02D526583003E8DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F8669DB42D526583003E8DDC /* Hindsight */,
+			);
+			name = Hindsight;
+			packageProductDependencies = (
+			);
+			productName = Hindsight;
+			productReference = F8669DB22D526583003E8DDC /* Hindsight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8669DC22D526586003E8DDC /* HindsightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8669DDA2D526586003E8DDC /* Build configuration list for PBXNativeTarget "HindsightTests" */;
+			buildPhases = (
+				F8669DBF2D526586003E8DDC /* Sources */,
+				F8669DC02D526586003E8DDC /* Frameworks */,
+				F8669DC12D526586003E8DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8669DC52D526586003E8DDC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F8669DC62D526586003E8DDC /* HindsightTests */,
+			);
+			name = HindsightTests;
+			packageProductDependencies = (
+			);
+			productName = HindsightTests;
+			productReference = F8669DC32D526586003E8DDC /* HindsightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8669DCC2D526586003E8DDC /* HindsightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8669DDD2D526586003E8DDC /* Build configuration list for PBXNativeTarget "HindsightUITests" */;
+			buildPhases = (
+				F8669DC92D526586003E8DDC /* Sources */,
+				F8669DCA2D526586003E8DDC /* Frameworks */,
+				F8669DCB2D526586003E8DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8669DCF2D526586003E8DDC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F8669DD02D526586003E8DDC /* HindsightUITests */,
+			);
+			name = HindsightUITests;
+			packageProductDependencies = (
+			);
+			productName = HindsightUITests;
+			productReference = F8669DCD2D526586003E8DDC /* HindsightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8669DAA2D526583003E8DDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F8669DB12D526583003E8DDC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F8669DC22D526586003E8DDC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F8669DB12D526583003E8DDC;
+					};
+					F8669DCC2D526586003E8DDC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F8669DB12D526583003E8DDC;
+					};
+				};
+			};
+			buildConfigurationList = F8669DAD2D526583003E8DDC /* Build configuration list for PBXProject "Hindsight" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8669DA92D526583003E8DDC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F8669DB32D526583003E8DDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8669DB12D526583003E8DDC /* Hindsight */,
+				F8669DC22D526586003E8DDC /* HindsightTests */,
+				F8669DCC2D526586003E8DDC /* HindsightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8669DB02D526583003E8DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DC12D526586003E8DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DCB2D526586003E8DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8669DAE2D526583003E8DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DBF2D526586003E8DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8669DC92D526586003E8DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8669DC52D526586003E8DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8669DB12D526583003E8DDC /* Hindsight */;
+			targetProxy = F8669DC42D526586003E8DDC /* PBXContainerItemProxy */;
+		};
+		F8669DCF2D526586003E8DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8669DB12D526583003E8DDC /* Hindsight */;
+			targetProxy = F8669DCE2D526586003E8DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8669DD52D526586003E8DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8669DD62D526586003E8DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F8669DD82D526586003E8DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hindsight/Hindsight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hindsight/Preview Content\"";
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.Hindsight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8669DD92D526586003E8DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hindsight/Hindsight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hindsight/Preview Content\"";
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.Hindsight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8669DDB2D526586003E8DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.HindsightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hindsight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hindsight";
+			};
+			name = Debug;
+		};
+		F8669DDC2D526586003E8DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.HindsightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hindsight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hindsight";
+			};
+			name = Release;
+		};
+		F8669DDE2D526586003E8DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.HindsightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hindsight;
+			};
+			name = Debug;
+		};
+		F8669DDF2D526586003E8DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAVSXAXJJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavidSizemore.HindsightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hindsight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8669DAD2D526583003E8DDC /* Build configuration list for PBXProject "Hindsight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8669DD52D526586003E8DDC /* Debug */,
+				F8669DD62D526586003E8DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8669DD72D526586003E8DDC /* Build configuration list for PBXNativeTarget "Hindsight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8669DD82D526586003E8DDC /* Debug */,
+				F8669DD92D526586003E8DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8669DDA2D526586003E8DDC /* Build configuration list for PBXNativeTarget "HindsightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8669DDB2D526586003E8DDC /* Debug */,
+				F8669DDC2D526586003E8DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8669DDD2D526586003E8DDC /* Build configuration list for PBXNativeTarget "HindsightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8669DDE2D526586003E8DDC /* Debug */,
+				F8669DDF2D526586003E8DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8669DAA2D526583003E8DDC /* Project object */;
+}
