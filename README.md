@@ -1,6 +1,6 @@
-# Hindsight
+# Oblique Pauses
 
-![Hindsight App Screenshot](./assets/hindsight-hero.jpg)
+![Oblique Pauses App Screenshot](./assets/hindsight-hero.jpg)
 
 This MacOS app helps you rest your eyes following the 20/20/20 rule—reminding you to look away from your screen every 20 minutes for 20 seconds at something 20 feet away. Instead of a simple timer, it features Brian Eno's *Oblique Strategies*, offering prompts to shift your perspective and reset your focus. Give your eyes a break, and let your mind wander.
 
@@ -27,7 +27,7 @@ git clone https://github.com/davidsizemore/hindsight.git
 2. Open the project in Xcode:
 ```bash
 cd hindsight
-open Hindsight.xcodeproj
+open ObliquePauses.xcodeproj
 ```
 
 3. Archive the project:
@@ -37,8 +37,8 @@ open Hindsight.xcodeproj
    - Choose "Copy App" and select a location (like your Desktop)
    
 4. Install the app:
-   - Drag the exported Hindsight.app to your Applications folder
-   - Launch Hindsight from your Applications folder
+   - Drag the exported ObliquePauses.app to your Applications folder
+   - Launch Oblique Pauses from your Applications folder
 
 ## Usage
 

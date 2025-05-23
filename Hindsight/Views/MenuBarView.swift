@@ -69,7 +69,7 @@ struct MenuBarView: View {
                         .foregroundColor(.secondary)
                         .frame(width: 20, height: 20)
                         .font(.system(size: 12))
-                    Text("Quit Hindsight")
+                    Text("Quit Oblique Pauses")
                 }
             }
             .buttonStyle(MenuButtonStyle())
