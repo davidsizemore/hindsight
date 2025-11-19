@@ -63,6 +63,24 @@ struct MenuBarView: View {
             Divider()
                 .padding(.vertical, 2)
             
+            Button(action: {
+                appState.useTerminalStyle.toggle()
+            }) {
+                HStack(spacing: 8) {
+                    Image(systemName: appState.useTerminalStyle ? "terminal.fill" : "terminal")
+                        .foregroundColor(appState.useTerminalStyle ? .green : .secondary)
+                        .frame(width: 20, height: 20)
+                        .font(.system(size: 12))
+                    Text("Terminal Style")
+                        .font(.system(size: 14))
+                }
+            }
+            .buttonStyle(MenuButtonStyle())
+            .padding(.vertical, 4)
+            
+            Divider()
+                .padding(.vertical, 2)
+            
             Button(action: { NSApplication.shared.terminate(nil) }) {
                 HStack(spacing: 8) {
                     Image(systemName: "xmark")

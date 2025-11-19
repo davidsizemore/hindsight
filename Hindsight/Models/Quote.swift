@@ -12,14 +12,12 @@ struct QuoteCollection: Codable {
 class QuoteManager {
     static let shared = QuoteManager()
     private var allQuotes: [Quote] = []
-    private var unusedQuotes: [Quote] = []
-    
-    #if DEBUG
-    private var quoteUsageCounts: [String: Int] = [:]  // Track quote usage
-    #endif
+    private var seenQuotes: Set<String> = []
+    private let seenQuotesKey = "HindsightSeenQuotes"
     
     init() {
         loadQuotes()
+        loadSeenQuotes()
     }
     
     private func loadQuotes() {
@@ -30,7 +28,6 @@ class QuoteManager {
                 let decoder = JSONDecoder()
                 let quoteCollection = try decoder.decode(QuoteCollection.self, from: data)
                 self.allQuotes = quoteCollection.quotes
-                resetUnusedQuotes()
                 return
             } catch {
                 print("Error loading quotes from JSON: \(error)")
@@ -43,40 +40,58 @@ class QuoteManager {
             Quote(text: "Look far to see far.", author: nil),
             Quote(text: "Take a moment to rest your eyes...", author: nil)
         ]
-        resetUnusedQuotes()
     }
     
-    private func resetUnusedQuotes() {
-        unusedQuotes = allQuotes.shuffled()
+    private func loadSeenQuotes() {
+        if let saved = UserDefaults.standard.array(forKey: seenQuotesKey) as? [String] {
+            seenQuotes = Set(saved)
+        }
+    }
+    
+    private func saveSeenQuotes() {
+        UserDefaults.standard.set(Array(seenQuotes), forKey: seenQuotesKey)
     }
     
     func getRandomQuote() -> Quote {
-        // If we've used all quotes, reset and reshuffle
-        if unusedQuotes.isEmpty {
-            resetUnusedQuotes()
+        // Filter out quotes we've already seen
+        var availableQuotes = allQuotes.filter { !seenQuotes.contains($0.text) }
+        
+        // If we've seen everything (or almost everything), reset
+        if availableQuotes.isEmpty {
+            print("All quotes seen, resetting cycle.")
+            seenQuotes.removeAll()
+            saveSeenQuotes()
+            availableQuotes = allQuotes
         }
         
-        // Take the next quote from our shuffled queue
-        let quote = unusedQuotes.removeLast()
+        // Fallback if something is terribly wrong (e.g. empty allQuotes)
+        if availableQuotes.isEmpty {
+            return Quote(text: "Breathe.", author: nil)
+        }
+        
+        // Pick a random quote
+        let quote = availableQuotes.randomElement()!
+        
+        // Mark as seen
+        seenQuotes.insert(quote.text)
+        saveSeenQuotes()
         
         #if DEBUG
-        // Track and print quote usage
-        quoteUsageCounts[quote.text, default: 0] += 1
         print("Quote selected: \(quote.text)")
-        print("Quotes remaining in current cycle: \(unusedQuotes.count)")
-        print("Usage counts:")
-        for (text, count) in quoteUsageCounts.sorted(by: { $0.value > $1.value }) {
-            print("\"\(text)\": \(count) times")
-        }
+        print("Quotes seen: \(seenQuotes.count) / \(allQuotes.count)")
         #endif
         
         return quote
     }
     
     #if DEBUG
-    // Helper method to verify quotes are loaded
     func getAllQuotes() -> [Quote] {
         return allQuotes
+    }
+    
+    func resetHistory() {
+        seenQuotes.removeAll()
+        saveSeenQuotes()
     }
     #endif
 } 

@@ -16,6 +16,7 @@ class AppState: NSObject, ObservableObject {
             updateLaunchAtLogin()
         }
     }
+    @Published var useTerminalStyle: Bool = false
     
     private var timer: Timer?
     private var waitTimer: Timer?
@@ -69,7 +70,7 @@ class AppState: NSObject, ObservableObject {
         window.level = .floating
         window.backgroundColor = .clear
         window.isOpaque = false
-        window.hasShadow = true
+        window.hasShadow = false
         window.center()
         window.titleVisibility = .hidden
         window.titlebarAppearsTransparent = true
@@ -168,11 +169,13 @@ class AppState: NSObject, ObservableObject {
         
         // Start countdown timer
         waitTimer?.invalidate()
-        waitTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
+        let timerInterval: TimeInterval = 0.05
+        waitTimer = Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: true) { [weak self] timer in
             guard let self = self else { return }
-            withAnimation {
-                self.remainingWaitTime -= 1
+            withAnimation(.linear(duration: timerInterval)) {
+                self.remainingWaitTime -= timerInterval
                 if self.remainingWaitTime <= 0 {
+                    self.remainingWaitTime = 0
                     timer.invalidate()
                 }
             }
